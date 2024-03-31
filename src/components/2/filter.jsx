@@ -6,9 +6,9 @@ function Filter (props) {
 
 
     return <>
-        <button>
+        <button className="filter-btn">
             All
-            <img src="" alt="error" />
+            <img src="./img/91a27d20267c9dc553cbc0061e941cc3-png.png" alt="error" />
         </button>
     </>
 }

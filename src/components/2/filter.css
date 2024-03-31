@@ -1,0 +1,13 @@
+.filter-btn{
+    font-size: 18px;
+    color: #4f545e;
+    padding: 10px 5px 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.filter-btn img{
+    width: 10px;
+    height: 10px;
+    margin-left: 100px;
+}

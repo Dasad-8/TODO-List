@@ -1,10 +1,9 @@
 
 import './App.css';
 import React from 'react';
-import Search from './components/1/search';
-import Filter from './components/2/filter';
-import TodoList from './components/3/todo-list';
-import AddTask from './components/4/add-task';
+import TodoList from './components/4/todo-list';
+import AddTask from './components/5/add-task';
+import SearchFilterNav from './components/3/search-filter-nav';
 
 function App() {
 
@@ -14,8 +13,7 @@ function App() {
     <section className="wr">
       <h1>Todo List</h1>
 
-      <Search />
-      <Filter />
+      <SearchFilterNav />
       <TodoList />
       <AddTask />
     </section>

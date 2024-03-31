@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.wr{
+  width: 1620px;
+  margin: 0px auto;
+}
+
+h1{
+  font-size: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #4f545e;
+}
