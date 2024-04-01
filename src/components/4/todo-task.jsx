@@ -6,7 +6,7 @@ function TodoTask (props) {
 
     return <>
         <section>
-            <input className='heckbox' type="checkbox" />
+            <input className='checkbox' type="checkbox" />
             <div>
                 <h3>{task.title}</h3>
                 <div>
