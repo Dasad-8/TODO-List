@@ -5,7 +5,7 @@ function TodoTask (props) {
     let task =  props.task;
 
     return <>
-        <section>
+        <section className='task'>
             <input className='checkbox' type="checkbox" />
             <div>
                 <h3>{task.title}</h3>
