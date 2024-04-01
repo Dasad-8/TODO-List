@@ -21,7 +21,7 @@ function TodoList (props) {
 
 
     return <>
-        <div>
+        <div className='todo-list'>
             {(tasks.length === 0) ? <><TodoTaskLoader /><TodoTaskLoader /><TodoTaskLoader /></> : tasks.map ((item, index) => (<TodoTask task = {item} key = {index} />))}
         </div>
     </>
