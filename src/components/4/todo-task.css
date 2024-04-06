@@ -1,5 +1,15 @@
 .task{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.task:last-child{
+  margin-bottom: 0px;
 }
 
 .checkbox{
@@ -7,6 +17,45 @@
   height: 40px;
 }
 
+.task-data{
+  margin-left: 10px;
+}
+
 h3{
-  font-size: 25px;
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+p{
+  margin: 0px;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.flex p {
+  margin-left: 5px;
+}
+
+.task-btns{
+  display: flex;
+  align-items: center;
+}
+
+.task-btn{
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.task-btn img{
+  width: 20px;
+  height: 20px;
+}
+.task-btn:last-child img{
+  width: 25px;
+  height: 25px;
 }
