@@ -1,13 +1,19 @@
 .filter-btn{
-    font-size: 18px;
-    color: #4f545e;
-    padding: 10px 5px 10px 15px;
+    display: flex;
+    align-items: center;
+    color: #65657D;
+    padding: 20px 25px 20px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.13px;
+    text-align: left;
+    background: #CCCDDF;
 }
 
 .filter-btn img{
-    width: 10px;
-    height: 10px;
-    margin-left: 100px;
+    width: 25px;
+    height: 25px;
+    margin-left: 215px;
 }

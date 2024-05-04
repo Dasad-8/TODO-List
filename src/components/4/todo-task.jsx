@@ -6,17 +6,17 @@ function TodoTask (props) {
 
     return <>
         <section className='task'>
-            <div className='flex'>
-                <input className='checkbox' type="checkbox" />
+            <label className='check'>
+                <input className='check-input' type="checkbox"/>
+                <span className='check-box'></span>
+
                 <div className='task-data'>
                     <h3>{task.title}</h3>
                     <div className='flex'>
-                        <p>{task.time},</p>
-                        <p>{task.date}</p>
-                        <p>{(!task.modified) ? "created" : "modified"}</p>
+                        <p>{(!task.modified) ? "created" : "modified"} {task.date}, {task.time}</p>
                     </div>
                 </div>
-            </div>
+            </label>
             <div className='task-btns'>
                 <button className='task-btn'><img src="./img/trash-container.png" alt="error" /></button>
                 <button className='task-btn'><img src="./img/pencil.png" alt="error" /></button>

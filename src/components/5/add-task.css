@@ -4,20 +4,27 @@
 }
 
 .add-task{
-    font-size: 18px;
-    width: 1225px;
-    color: rgb(200, 200, 200);
-    padding: 15px 20px;
-    border-radius: 5px;
-    margin-top: 15px;
+    background-color: #fff;
+    border: none;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.13px;
+    text-align: left;
+    color: #B2B2BE;
+    padding: 15px;
+    border-radius: 10px;
+    width: 1163px;
 }
 
 .add-task-btn{
-    font-size: 20px;
-    background: #715bff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    text-align: center;
+    background: #626FEF;
     color: #fff;
     border: none;
-    border-radius: 5px;
-    padding: 15px 25px;
-    margin-left: 15px;
+    border-radius: 10px;
+    padding: 18px 48px;
+    margin-left: 25px;
 }

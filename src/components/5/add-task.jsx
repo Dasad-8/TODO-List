@@ -8,10 +8,20 @@ function AddTask (props) {
         const taskInput = document.getElementById('task-input');
         const addTaskValue = taskInput.value;
         if(addTaskValue.length === 0) {
-            props.addTask('New Task', 'This is a new task', 'red', false);
             alert('Пустое поле задачи! Пожалуйста, введите текст задачи');
             return;
-        }  
+        };
+
+        /*data.toDateString()*/
+
+        const data = new Date();
+        const hour = data.getHours();
+        const minute = data.getMinutes();
+        const day = data.getDate();
+        const month = data.getMonth() + 1;
+        const year = data.getFullYear();
+
+        props.addTask(addTaskValue, hour + ":" + minute , day + "." + month + "." + year, false);
     };
 
     return <>
