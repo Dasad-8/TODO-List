@@ -12,12 +12,16 @@
     border-radius: 10px;
     padding: 10px 15px 10px 10px;
     margin-right: 10px;
+    border: none;
+    background: #fff;
 }
 
 .search-btn{
     border-radius: 10px;
     padding: 5px 15px;
     margin-right: 30px;
+    background: #fff;
+    border: none;
 }
 
 .search-btn img{

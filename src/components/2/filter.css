@@ -1,19 +1,33 @@
+
 .filter-btn{
-    display: flex;
+    display: inline-block;
+    width: 300px;
     align-items: center;
     color: #65657D;
     padding: 20px 25px 20px 15px;
     border: none;
     border-radius: 10px;
+    font: inherit;
     font-size: 24px;
     font-weight: 400;
     line-height: 28.13px;
     text-align: left;
-    background: #CCCDDF;
+    background-color: #CCCDDF;
+    outline: none;
+
+  /* reset */
+
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
-.filter-btn img{
-    width: 25px;
-    height: 25px;
-    margin-left: 215px;
+.filter-arrow{
+    background-image: url(/public/img/arrow.png);
+    background-position: calc(100% - 20px) 1em;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
 }

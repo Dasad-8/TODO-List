@@ -1,5 +1,6 @@
 import React from "react";
 import './add-task.css';
+import {useRef} from 'react';
 
 function AddTask (props) {
 
@@ -22,12 +23,16 @@ function AddTask (props) {
         const year = data.getFullYear();
 
         props.addTask(addTaskValue, hour + ":" + minute , day + "." + month + "." + year, false);
+
+        addTaskInputRef.current.value = null;
     };
+
+    const addTaskInputRef = useRef();
 
     return <>
         <section>
             <form onSubmit={OnSubmit} className="task-form" action="">
-                <input id="task-input" className="add-task" type="text" placeholder="New task..." /><br/>
+                <input ref={addTaskInputRef} id="task-input" className="add-task" type="text" placeholder="New task..." /><br/>
                 <button className="add-task-btn">Add Task</button>
             </form>
         </section>

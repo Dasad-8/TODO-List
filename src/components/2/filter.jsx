@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useRef } from "react";
 import './filter.css';
 
-function Filter (props) {
+function Filter ({filter, setFilter}) {
 
+    const selectValueRef = useRef();
 
+    function onChange() {
+        const selectValue = selectValueRef.current.value;
+        setFilter(selectValue);
+    };
 
     return <>
-        <button className="filter-btn">
-            All
-            <img src="./img/91a27d20267c9dc553cbc0061e941cc3-png.png" alt="error" />
-        </button>
+        <select ref={selectValueRef} onChange={onChange} className="filter-btn filter-arrow" name="time" id="time-select">
+            <option value="all">All</option>
+            <option value="last_day">Last Day</option>
+            <option value="last_week">Last Week</option>
+            <option value="last_month">Last Month</option>
+            <option value="last_year">Last Year</option>
+        </select>
     </>
 }
 

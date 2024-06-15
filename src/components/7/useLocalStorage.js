@@ -13,8 +13,7 @@ function useLocalStorage (key, defaultSrc) {
         if (tasksJson === null) {
             fetch (defaultSrc)
             .then(response => response.json())
-            .then(value => {console.log('Received value:', value);
-            setValue(value)});
+            .then(value => setValue(value));
             
         } else {
             setValue (JSON.parse(tasksJson));

@@ -1,6 +1,6 @@
 
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import TodoList from './components/4/todo-list';
 import SearchFilterNav from './components/3/search-filter-nav';
 
@@ -10,6 +10,9 @@ import useRandom from './components/8/useRandom'; */
 
 function App() {
 
+  const [filter, setFilter] = useState('all');
+
+  const [search, setSearch] = useState("")
 
 /*   const { value, increment, decrement} = useTestHook(0);
 
@@ -21,8 +24,8 @@ function App() {
       <h1>Todo List</h1>
       <h2>Created by: Alisa Alyounes</h2>
 
-      <SearchFilterNav />
-      <TodoList />
+      <SearchFilterNav filter={filter} setFilter={setFilter} search={search} setSearch={setSearch}/>
+      <TodoList  filter={filter} search={search} setSearch={setSearch}/>
     </section>
 
     {/* <div>
