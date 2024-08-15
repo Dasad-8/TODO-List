@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './todo-list.css';
 import TodoTask from './todo-task';
-/* import {useState, useEffect} from  'react'; */
-import TodoTaskLoader from './todo-task-loader';
 import AddTask from '../5/add-task';
 import useLocalStorage from '../7/useLocalStorage';
 
@@ -12,26 +10,6 @@ function TodoList ({filter, search, setSearch}) {
 
     let [editIndex, setEditIndex] = useState(-1);
 
-    
-
-    /* useEffect(() =>{
-        if (localStorage.getItem("tasks") === null) {
-            fetchTasks();
-        } else {
-            setTasks(JSON.parse(localStorage.getItem("tasks")));
-        }
-                
-    }, []); */
-
-    /* localStorage.setItem("tasks", JSON.stringify([])); */ 
-
-    /* function fetchTasks (){
-        fetch ('./todo-list-default.json')
-        .then(response => response.json())
-        .then(tasks => {console.log('Received tasks:', tasks);
-        setTasks(tasks)});
-    } */
-
     const addTask = (title, time, date, modified)=>{
         let taskData = {
             title: title,
@@ -39,16 +17,13 @@ function TodoList ({filter, search, setSearch}) {
             date: date,
             modified: modified
         }
-        let  newTasks = [...tasks]; // создание копии массива
+        let  newTasks = [...tasks];
         newTasks.push(taskData);
         setTasks(newTasks);
-        /* localStorage.setItem ("tasks", JSON.stringify(newTasks)); */
         
     }
 
     function fromStringToDate(time, data) {
-        // time: HH:MM
-        // data: DD.MM.YYYY
         let timeSplit = time.split(':');
         let hours = parseInt(timeSplit[0]);
         let mins = parseInt(timeSplit[1]);
@@ -79,7 +54,7 @@ function TodoList ({filter, search, setSearch}) {
 
     return <>
         <div className='todo-list'>
-            {(tasks === null) ? <><TodoTaskLoader /><TodoTaskLoader /><TodoTaskLoader /></> : tasks.map ((task, index) => (
+            {(tasks === null) ? <></> : tasks.map ((task, index) => (
             (filteredTasks.includes(task)) ?<TodoTask task = {task} key = {index} setTasks = {setTasks} tasks = {tasks} index = {index} editIndex = {editIndex} setEditIndex = {setEditIndex} /> : <div key={index}></div>))}
         </div>
         <AddTask  addTask={addTask}/>

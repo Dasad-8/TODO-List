@@ -50,15 +50,5 @@ h1{
   text-align: center;
   text-transform: uppercase;
   color: #65657D;
-  margin-bottom: 10px;
-}
-
-h2{
-  font-size: 36px;
-  font-weight: 300;
-  line-height: 42.19px;
-  text-align: center;
-  color: #A9A9BA;
-  margin: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }

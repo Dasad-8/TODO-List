@@ -1,7 +1,7 @@
 import './todo-task.css';
 import {useRef, useEffect, useState} from 'react';
 
-function TodoTask ({task, setTasks, tasks, index, editIndex, setEditIndex}) /*для передачи данных используются props(они могут имееть разные имена) */ {
+function TodoTask ({task, setTasks, tasks, index, editIndex, setEditIndex}) {
 
     const deleteTask = () => {
         let  newTasks = [...tasks];
@@ -42,8 +42,6 @@ function TodoTask ({task, setTasks, tasks, index, editIndex, setEditIndex}) /*д
 
     const handleChange = (event) => {
         setInputValue(event.target.value)};
-
-    /* const deleteTask = newTasks.splice(idex); */
 
     return <>
         <section className='task'>

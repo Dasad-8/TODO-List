@@ -13,8 +13,6 @@ function AddTask (props) {
             return;
         };
 
-        /*data.toDateString()*/
-
         const data = new Date();
         const hour = data.getHours();
         const minute = data.getMinutes();
